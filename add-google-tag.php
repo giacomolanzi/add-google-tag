@@ -8,18 +8,17 @@ Author: Giacomo Lanzi
 Author URI: https://www.planbproject.it/chi-sono/
 */
 
-/* Remember to add YOUR google tag code intead of "GTM-xxxxxxx" */
+/* Remember to add YOUR google tag code instead of "GTM-xxxxxxx" */
 
 add_action('wp_head', 'pbp_gtm_head' );
 add_action('wp_footer', 'pbp_gtm_body' );
 
 //* ---------------------- GOOGLE TAG MANAGER HEAD ---------------------- *//
 
-/* codice di tracciamento solo per utenti non loggati */
 function pbp_gtm_head() {
 	if ( !is_user_logged_in() ) { // not for logged in users
 		?>
-<!-- Google Tag Manager -->
+<!-- Google Tag Manager script -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -31,6 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 
 //* ---------------------- GOOGLE TAG MANAGER BODY ---------------------- *//
+
 function pbp_gtm_body() {
 	if ( !is_user_logged_in() ) { // not for logged in users
 		?>
