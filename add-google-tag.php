@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: EVE GTM
+Plugin Name: Plan b Project GTM
 Plugin URI: https://planbproject.it/
 Version: 1.0
 Description: This plugin injects Google Tag Manager in head and body
